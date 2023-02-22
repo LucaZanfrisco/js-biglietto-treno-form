@@ -16,7 +16,7 @@ btnGenera.addEventListener(
         // Inserimento del gli input dell'utente in delle variabili
         let sconto = 0;
         let tipoBiglietto = "Biglietto Standard";
-        let carrozzaRandom = Math.random(1,10);
+        let carrozzaRandom = (Math.random() * 10) +1 ;
         const km = Number(document.getElementById('distanza').value);
         const etaUtente = document.getElementById('eta').value;
         const nomeUtente = document.getElementById('name').value;
@@ -40,17 +40,17 @@ btnGenera.addEventListener(
             sconto = 40;
             tipoBiglietto = "Biglietto Vecio";
         }
-        
+
         // Stampa a video del prezzo finale
         console.log(`Prezzo Scontato del ${sconto}%: ${prezzoBiglietto.toFixed(2)}€`);
 
         // Comparsa del biglietto con le informazioni inserite dall'utente
         bigliettoShow.classList.add('show');
+        bigliettoShow.classList.remove('hidden');
         document.querySelector('.name').innerHTML = nomeUtente;
         document.getElementById('tipo-biglietto').innerHTML = tipoBiglietto;
         document.getElementById('carrozza').innerHTML = Math.floor(carrozzaRandom);
         document.getElementById('prezzo').innerHTML = prezzoBiglietto.toFixed(2);
-        bigliettoShow.classList.remove('hidden');
     }
 );
 
