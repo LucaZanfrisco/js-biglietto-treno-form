@@ -1,10 +1,17 @@
+/* Reset  */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --red-color: #94083e;
+}
+/* ------- */
+
+/* Common */
 body{
-    background-color: darkred;
+    background-color: var(--red-color);
 }
 .container{
     max-width: 50rem;
@@ -16,9 +23,25 @@ h1{
 }
 .box-white{
     background-color: white;
-    padding: 2.1875rem;
-    border-radius: 1.5625rem;
+    padding: 3.125rem;
+    border-radius: .9375rem;
+    margin: 1.875rem 0;
 }
+.btn{
+    padding: .3125rem .625rem;
+    border: .125rem solid darkgoldenrod;
+    border-radius: .625rem;
+    background-color: transparent;
+    color: var(--red-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: lightgrey;
+    cursor: pointer;
+    margin: 0 .625rem;
+}
+/* ------- */
+
+/* Form  */
 .form-box{
     display: flex;
     align-items: center;
@@ -26,25 +49,15 @@ h1{
 }
 .col > label{
     font-size: 1.25rem;
-    color: darkred;
+    color: var(--red-color);
 }
 .col .input{
-    border: 1px solid darkred;
+    border: 2px solid var(--red-color);
     border-radius: .3125rem;
     height: 1.875rem;
     font-weight: bolder;
     margin-top: 1.25rem;
     text-align: center;
 }
-.btn{
-    padding: .3125rem .625rem;
-    border: 2px solid darkgoldenrod;
-    border-radius: .625rem;
-    background-color: transparent;
-    color: darkred;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: lightgrey;
-    cursor: pointer;
-    margin: 0 .625rem;
-}
+/* ------- */
+
