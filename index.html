@@ -43,8 +43,42 @@
             <button id="btn-annulla" class="btn" type="reset">Annulla</button>
         </div>
         <!-- /box biano con form -->
-        <div class="box-white">
+        <div id="biglietto" class="hidden">
+            <h1>IL TUO BIGLIETTO</h2>
+           <div class="box-white">
+            <div id="dettagli">DETTAGLIO PASSEGGERO</div>
+                <div class="flex">
+                    <div class="col-left">
+                        <div>
+                            NOME PASSEGGERO
+                        </div>
+                        <div class="name"></div>
+                    </div>
+                    <div class="col-right">
+                        <table>
+                            <thead>
+                                <tr>
+                                   <th>Offerta</th>
+                                    <th>Carrozza</th>
+                                    <th>Codice CP</th>
+                                    <th>Costo biglietto</th>  
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="tipo-biglietto"></td>
+                                    <td id="carrozza"></td>
+                                    <td>92911</td>
+                                    <td id="prezzo"></td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+        </div> 
         </div>
+        
     </div>
     <!-- /container generale 800px  -->
     <script src="js/main.js"></script>
