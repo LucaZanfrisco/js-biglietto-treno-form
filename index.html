@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto Treno Form</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <form action="#" method="get">
-        <label for="distanza">
-            Km da percorrere
-            <input type="number" name="distanza" id="distanza" value="">
-        </label>
-        <label for="eta">
-            Fascia d'Età
-            <select name="eta" id="eta">
-                <option value="M">Maggiorenne</option>
-                <option value="m">Minorenne</option>
-                <option value="V">Over 65</option>
-            </select>
-        </label>
-        <button id="btn-genera" type="button">Genera</button>
-    </form>
-    
+    <div class="container">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="box-white">
+            <form action="#" method="get">
+                <div class="form-box">
+                    <div class="col">
+                        <label for="name">Nome Cognome</label>
+                        <input type="text" name="name" id="name" value="" class="input">
+                    </div>
+                    <div class="col">
+                        <label for="distanza">Km da percorrere</label>
+                        <input type="number" name="distanza" id="distanza" value="" class="input">
+                    </div>
+                    <div class="col">
+                        <label for="eta">Fascia d'Età</label>
+                        <select name="eta" id="eta" class="input">
+                            <option value="M">Maggiorenne</option>
+                            <option value="m">Minorenne</option>
+                            <option value="V">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+
+            </form>
+            <button id="btn-genera" class="btn" type="button">Genera</button>
+            <button id="btn-annulla" class="btn" type="reset">Annulla</button>
+        </div>
+
+    </div>
     <script src="js/main.js"></script>
 </body>
+
 </html>
