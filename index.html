@@ -43,25 +43,33 @@
             <button id="btn-annulla" class="btn" type="reset">Annulla</button>
         </div>
         <!-- /box biano con form -->
+
+        <!-- Box biglietto -->
         <div id="biglietto" class="hidden">
             <h1>IL TUO BIGLIETTO</h2>
-           <div class="box-white">
-            <div id="dettagli">DETTAGLIO PASSEGGERO</div>
+            <!-- contenitore bianco -->
+            <div class="box-white">
+                <div id="dettagli">DETTAGLIO PASSEGGERO</div>
+                <!-- contenitore flex con due colonne -->
                 <div class="flex">
+                    <!-- colonna sinista -->
                     <div class="col-left">
                         <div>
                             NOME PASSEGGERO
                         </div>
                         <div class="name"></div>
                     </div>
+                    <!-- /colonna sinistra -->
+                    <!-- colonna destra  -->
                     <div class="col-right">
+                        <!-- il male -->
                         <table>
                             <thead>
                                 <tr>
-                                   <th>Offerta</th>
+                                    <th>Offerta</th>
                                     <th>Carrozza</th>
                                     <th>Codice CP</th>
-                                    <th>Costo biglietto</th>  
+                                    <th>Costo biglietto</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -72,15 +80,19 @@
                                     <td id="prezzo"></td>
                                 </tr>
                             </tbody>
-
                         </table>
+                        <!-- /il male -->
                     </div>
+                    <!-- /colonna destra -->
                 </div>
-        </div> 
+                <!-- /contenitore flex con due colonne -->
+            </div>
+            <!-- /contenitore bianco -->
         </div>
-        
+        <!-- /box biglietto -->
     </div>
     <!-- /container generale 800px  -->
+    
     <script src="js/main.js"></script>
 </body>
 

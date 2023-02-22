@@ -12,6 +12,7 @@ const bigliettoShow = document.getElementById('biglietto');
 btnGenera.addEventListener(
     'click',
     function(){
+
         // Inserimento del gli input dell'utente in delle variabili
         let sconto = 0;
         let tipoBiglietto = "Biglietto Standard";
@@ -19,13 +20,16 @@ btnGenera.addEventListener(
         const km = Number(document.getElementById('distanza').value);
         const etaUtente = document.getElementById('eta').value;
         const nomeUtente = document.getElementById('name').value;
+
         // Stampa a video dei dati inseriti dall'utente come controllo
         console.log(nomeUtente);
         console.log({km});
         console.log({etaUtente});
+
         // Calcolo e stampa a video del prezzo pieno del biglietto
         let prezzoBiglietto = euroKm * km;
         console.log(`${prezzoBiglietto.toFixed(2)}€`);
+
         // Controllo se l'utente in base all'eta scelta se è idoneo ad uno sconto
         if(etaUtente === 'm'){
             prezzoBiglietto *= 0.8;
@@ -36,6 +40,7 @@ btnGenera.addEventListener(
             sconto = 40;
             tipoBiglietto = "Biglietto Vecio";
         }
+        
         // Stampa a video del prezzo finale
         console.log(`Prezzo Scontato del ${sconto}%: ${prezzoBiglietto.toFixed(2)}€`);
 
